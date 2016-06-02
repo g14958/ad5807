@@ -5,9 +5,9 @@
  */
 package model;
 
+import javax.jdo.*;
 import ad5807.PMF;
-import ad5807.PersistenceManager;
-import ad5807.PersistenceManagerFactory;
+
 
 public class RegistLogic {
     public void execute(Account account) {

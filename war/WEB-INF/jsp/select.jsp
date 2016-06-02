@@ -15,7 +15,7 @@
     <center>
         <br>
         <h3><font face="メイリオ" color="#6a1917">STEP1.商品を選択する</font></h3>
-        <form action="/ad5807/CheckOrderServlet" method="post">
+        <form action="/check_order" method="post">
 
             <table border="5" bordercolor="#cd853f" width="400" height ="200" rules="none">    
 

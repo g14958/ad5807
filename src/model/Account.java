@@ -6,13 +6,37 @@
 package model;
 
 import java.io.Serializable;
+
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 /**
  *
  * @author g14958ym
  */
-public class Account  implements Serializable{
-  private String userId, pass, name, address, phonenumber;
 
+@PersistenceCapable(identityType = IdentityType.APPLICATION)
+
+public class Account  implements Serializable{
+
+	@PrimaryKey
+    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+    private String userId;
+     
+    @Persistent
+    private String pass;
+     
+    @Persistent
+    private String name;
+     
+    @Persistent
+    private String address;
+     
+    @Persistent
+    private String phonenumber;
+	
   public Account() { }
   public Account(String userId, String pass, String name, String address, String phonenumber) {
     this.userId = userId;

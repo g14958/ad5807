@@ -96,7 +96,7 @@ public class CheckOrderServlet extends HttpServlet {
         if (errorMsg.length() != 0) {
             msg = errorMsg;
         } else {
-            msg += "<br><h4><center>"+userId+"さん、ご注文ありがとうございます。<br>以下の内容で承りました。</center></h4>";
+           // msg += "<br><h4><center>"+userId+"さん、ご注文ありがとうございます。<br>以下の内容で承りました。</center></h4>";
             for (int i = 0; i < product.length; i++) {
                 //msg += product[i] + " "+ q.get(i) +"<br>";
                 Product p = new Product();
